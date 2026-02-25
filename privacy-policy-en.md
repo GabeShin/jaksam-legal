@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy - Jaksam
+---
+
 # Jaksam Privacy Policy
 
 **Effective Date**: February 12, 2026
