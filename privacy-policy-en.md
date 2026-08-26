@@ -190,7 +190,7 @@ If this policy is updated, we will notify you via in-app notice or email. For si
 
 For questions about this Privacy Policy or your personal data, please contact us:
 
-- **Email**: gabeshin.ts@gmail.com
+- **Email**: support@jaksam.app
 - **App Name**: Jaksam
 
 ---

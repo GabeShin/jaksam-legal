@@ -7,7 +7,7 @@ title: 고객 지원 - 작샘 (Jaksam)
 
 작샘(Jaksam) 앱 사용 중 문제가 발생하거나 도움이 필요하시면 아래 이메일로 문의해 주세요.
 
-**이메일**: [gabeshin.ts@gmail.com](mailto:gabeshin.ts@gmail.com)
+**이메일**: [support@jaksam.app](mailto:support@jaksam.app)
 
 영업일 기준 1~2일 이내에 답변 드리겠습니다.
 
@@ -30,6 +30,6 @@ A: 설정 > 계정 삭제에서 계정과 모든 데이터를 삭제할 수 있�
 
 If you need help with the Jaksam app, please contact us via email.
 
-**Email**: [gabeshin.ts@gmail.com](mailto:gabeshin.ts@gmail.com)
+**Email**: [support@jaksam.app](mailto:support@jaksam.app)
 
 We will respond within 1-2 business days.

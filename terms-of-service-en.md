@@ -145,7 +145,7 @@ Users must not:
 
 For questions about the Service, please contact us:
 
-- **Email**: gabeshin.ts@gmail.com
+- **Email**: support@jaksam.app
 - **App Name**: Jaksam
 
 ---

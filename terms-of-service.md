@@ -145,7 +145,7 @@ title: 이용약관 - 작샘 (Jaksam)
 
 서비스 이용에 관한 문의사항이 있으시면 아래로 연락해 주세요:
 
-- **이메일**: gabeshin.ts@gmail.com
+- **이메일**: support@jaksam.app
 - **앱 이름**: 작샘 (Jaksam)
 
 ---
