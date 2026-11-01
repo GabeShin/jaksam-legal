@@ -123,7 +123,7 @@ The App uses the following third-party services:
 | Service Provider | Purpose | Data Shared |
 |-----------------|---------|-------------|
 | **Supabase** (US) | Authentication, database, file storage | Account info, recordings, all service data |
-| **Cloudflare** (US) | Recording storage (R2) | Recordings |
+| **Cloudflare** (US; data stored in Asia-Pacific) | Recording storage (R2) | Recordings |
 | **ElevenLabs** (US) | Audio transcription (Speech to Text API) | Recording audio |
 | **OpenAI** (US) | Audio transcription (Whisper API, when ElevenLabs is unavailable), summary/plan/coaching generation (GPT API) | Recording audio, transcribed text, student profile, feedback responses, AI coach conversations |
 | **Sentry** (US) | Error and performance monitoring | Error info, device info, user ID and role |
