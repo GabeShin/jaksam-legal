@@ -6,7 +6,7 @@ title: Privacy Policy - Jaksam
 # Jaksam Privacy Policy
 
 **Effective Date**: February 12, 2026
-**Last Updated**: March 5, 2026
+**Last Updated**: November 1, 2026
 
 ---
 
@@ -29,7 +29,7 @@ Data involved in AI processing includes:
 - Practice records and feedback responses (for generating tailored advice)
 - Conversations with the AI coach (for maintaining conversation context and generating responses)
 
-This data is processed through **OpenAI**'s API, located in the United States. Per OpenAI's API terms of service, data submitted via the API is not used for model training.
+Audio is transcribed through the API of **ElevenLabs**, located in the United States, or through OpenAI when ElevenLabs is unavailable. Other data is processed through **OpenAI**'s API, located in the United States. Per OpenAI's API terms of service, data submitted via the API is not used for model training.
 
 You may withdraw your consent at any time through the App's settings. Withdrawing consent will disable AI features.
 
@@ -85,8 +85,20 @@ This information is used by the AI to generate personalized feedback and practic
 | Device push token | Sending push notifications |
 | Error and crash data | App stability improvement (collected via Sentry) |
 | App performance data | Service quality improvement |
+| App usage (screens visited, features used, user ID, role, subscription status) | Understanding and improving how the service is used (collected via PostHog) |
 
 Error reports may include device type, OS version, app version, and screen context at the time of the error. Recording content and personal messages are never included in error reports.
+
+### 3.6 Information Collected When You Visit the Website
+
+The website (jaksam.app) uses Google Analytics for visit statistics, which sets cookies. The App itself does not use Google Analytics.
+
+| Data | Purpose |
+|------|---------|
+| Pages visited, time of visit, referrer | Analysing and improving website usage |
+| Browser and device type, approximate location | Analysing and improving website usage |
+
+You can refuse or delete cookies in your browser settings, or opt out with the [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout). Refusing cookies does not limit your use of the website.
 
 ---
 
@@ -95,7 +107,7 @@ Error reports may include device type, OS version, app version, and screen conte
 We use collected information for the following purposes:
 
 1. **Service delivery**: Account management, lesson/practice recording and playback, practice tracking
-2. **AI transcription**: Converting recorded audio/video to text (OpenAI Whisper API)
+2. **AI transcription**: Converting recorded audio/video to text (ElevenLabs Speech to Text API, or the OpenAI Whisper API when it is unavailable)
 3. **AI summary and plan generation**: Lesson summaries, practice plans, and feedback question generation (OpenAI GPT API)
 4. **AI coaching**: Personalized practice advice, daily practice plans, and weekly check-in messages (OpenAI GPT API)
 5. **Notifications**: Push notifications for lesson processing, practice reminders, and AI coaching messages
@@ -111,22 +123,31 @@ The App uses the following third-party services:
 | Service Provider | Purpose | Data Shared |
 |-----------------|---------|-------------|
 | **Supabase** (US) | Authentication, database, file storage | Account info, recordings, all service data |
-| **OpenAI** (US) | Audio transcription (Whisper API), summary/plan/coaching generation (GPT API) | Recording audio, transcribed text, student profile, feedback responses, AI coach conversations |
+| **Cloudflare** (US) | Recording storage (R2) | Recordings |
+| **ElevenLabs** (US) | Audio transcription (Speech to Text API) | Recording audio |
+| **OpenAI** (US) | Audio transcription (Whisper API, when ElevenLabs is unavailable), summary/plan/coaching generation (GPT API) | Recording audio, transcribed text, student profile, feedback responses, AI coach conversations |
 | **Sentry** (US) | Error and performance monitoring | Error info, device info, user ID and role |
+| **PostHog** (US) | App usage statistics | App usage, device info, user ID, role, subscription status |
+| **RevenueCat** (US) | Subscription billing | User ID, subscription and purchase history |
 | **Kakao** (South Korea) | Social login (optional) | Authentication tokens |
 | **Apple** (US) | Apple Sign In (optional) | Authentication tokens |
 | **Expo** (US) | Push notifications | Device push tokens |
+| **Google** (US) | Website visit statistics (Google Analytics) | Website visit data, cookie identifiers |
 
 ### About OpenAI Data Processing
 
 The following data is sent to OpenAI's API:
 
-- **Transcription**: Audio from lesson and practice recordings is sent to the OpenAI Whisper API for text conversion.
+- **Transcription**: When ElevenLabs is unavailable, audio from lesson and practice recordings is sent to the OpenAI Whisper API for text conversion.
 - **Summary/plan generation**: Transcribed text is sent to the OpenAI GPT API for generating summaries and practice plans.
 - **AI coaching**: Student profile data (age, instrument, experience level), recent practice records, feedback responses, and prior conversation history are sent to the OpenAI GPT API for generating personalized coaching messages.
 - **Weekly check-in**: Weekly practice data and lesson summaries are sent to the OpenAI GPT API for generating check-in questions.
 
 Per OpenAI's API terms of service, data submitted via the API is not used for model training.
+
+### About ElevenLabs Data Processing
+
+Audio from lesson and practice recordings is sent to the ElevenLabs Speech to Text API for text conversion. Only the recording audio is sent; no account information or student profile.
 
 We do not sell your personal information to third parties.
 
